@@ -19,7 +19,7 @@ public struct Task: Codable, Identifiable {
     public var dateCompetion: Date?
     public var tag: String?
 
-    public init(id: Int64?, name: String, description: String?, isResolved: Bool, dateCreate: Date?, dateCompetion: Date?, tag: String?) {
+    public init(id: Int64? = nil, name: String, description: String?, isResolved: Bool, dateCreate: Date?, dateCompetion: Date?, tag: String?) {
         self.id = id
         self.name = name
         self.description = description
