@@ -9,7 +9,7 @@ import Foundation
 
 
 
-public struct Task: Codable {
+public struct Task: Codable, Identifiable {
 
     public var id: Int64?
     public var name: String

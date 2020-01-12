@@ -9,7 +9,7 @@ import Foundation
 
 
 
-public struct Bookmark: Codable {
+public struct Bookmark: Codable, Identifiable {
 
     public var id: Int64?
     public var name: String
