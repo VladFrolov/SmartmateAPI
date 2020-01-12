@@ -15,11 +15,11 @@ public struct Bookmark: Codable {
     public var name: String
     public var link: String
     public var imageUrl: String
-    public var isFavorite: Bool?
+    public var isFavorite: Bool = false
     public var dateCreate: Date?
     public var tag: String?
 
-    public init(id: Int64?, name: String, link: String, imageUrl: String, isFavorite: Bool?, dateCreate: Date?, tag: String?) {
+    public init(id: Int64?, name: String, link: String, imageUrl: String, isFavorite: Bool, dateCreate: Date?, tag: String?) {
         self.id = id
         self.name = name
         self.link = link

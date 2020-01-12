@@ -14,12 +14,12 @@ public struct Task: Codable {
     public var id: Int64?
     public var name: String
     public var description: String?
-    public var isResolved: Bool? = false
+    public var isResolved: Bool = false
     public var dateCreate: Date?
     public var dateCompetion: Date?
     public var tag: String?
 
-    public init(id: Int64?, name: String, description: String?, isResolved: Bool?, dateCreate: Date?, dateCompetion: Date?, tag: String?) {
+    public init(id: Int64?, name: String, description: String?, isResolved: Bool, dateCreate: Date?, dateCompetion: Date?, tag: String?) {
         self.id = id
         self.name = name
         self.description = description

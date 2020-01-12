@@ -197,6 +197,7 @@ components:
         - name
         - link
         - imageUrl
+        - isFavorite
       properties:
         id:
           type: integer
@@ -210,6 +211,7 @@ components:
           type: string
         isFavorite:
           type: boolean
+          default: false
         dateCreate:
           type: string
           format: date-time
@@ -223,6 +225,7 @@ components:
       type: object
       required:
         - name
+        - isResolved
       properties:
         id:
           type: integer
